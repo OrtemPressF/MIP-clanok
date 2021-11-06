@@ -1,0 +1,170 @@
+\documentclass[10pt,twoside,english,a4paper]{article}
+\usepackage[english]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{Algorithms for improving image processing in mobile photography \thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2021, vedenie: Artem Vasko}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Artem Vasko\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xvaskoa1@stuba.sk}}
+	}
+
+\date{\small 9. september 2021} % upravte
+
+
+
+\begin{document}
+
+\maketitle
+
+% \begin{abstract}
+
+% \end{abstract}
+
+
+
+\section{Introduction}
+
+Today slightly every smartphone has a camera. It is very convenient, 
+% may be percentage of all photos made on phones vs cameras
+until we speak of quality of photos, captured with phone.
+By this article I will suggest way to improve quality by some algorithms and
+methods for post-processing that can be included to camera
+app. I choose this topic because as photograph myself, I was always
+unpleasant by my photos taken by phone. It maybe arranges for some people,
+but after seeing photos taken on beginner-class camera I struggled on
+insufficient quality of taken images. So, this article would add some
+possible solutions to the problem of poor dynamic range of photos
+taken with mobile devices nowadays.
+
+
+
+\section{What are possible solutions?} \label{nejaka}
+
+How can we solve problem with bad quality of photos? There are two ways:
+by improving hardware or improving software. But why just don't install
+large sensors (with big pixels in it) from the cameras to the smartphones, 
+making a huge hardware improvement?
+\newline It all because of dimensions of the smartphones. Today it's no
+way that big sensors can be handled in smartphone, which width is mostly
+limited to  10mm. If you know how camera work, you maybe recently
+understand the reason why it so, and it is not the size of sensor, but the
+size of the lens. The sensor is not a solar panel-like device whose size
+determines how much light you collect. The sensor is behind the lens
+and in fact, the lens is the determining factor.
+A large diameter lens captures a lot of light.
+It almost doesn't matter how large the sensor is. And by installing large
+sensor at once we should install lens with huge focal length. This is the
+main issue for relatively thin smartphone.
+\newline *img of camera structure*
+\newline In simple words, larger sensor (with big pixels in it) will require
+larger optics in terms of aperture and focal length.
+This means that the body of the phone will need to be thicker in
+order to provide the required distance between the lens and the sensor.
+\newline
+% To solve this problem, we need to know the specific reason.
+So if we can not just increase the sensors size, we need to go in another
+way, namely improve software. The biggest problem is lack of tones and
+colors, or in other words, lack  of dynamic range. Especially in
+high-contrast photos.
+To understand what dynamic range is, we can imagine it as a piano keyboard. There is
+a range of tones, in which we can see like piano has keyboard with limited
+ width, through which we can play. And the wider
+it is, the better. Even human eye can not see all range at once, but sensors 
+with big pixels in
+digital cameras can because of manual exposure, so we can put exposure
+exactly where we want it to be. Only the biggest and most expensive
+sensors can accommodate all 12 stops (there is a 12-stop difference in the
+highlights and shadows). But we are talking about matrices with small
+pixels, by which we want to cover all range of tones.
+\newline The simplest decision is to combine few under- and over-exposed
+photo into one frame. Doing that we create HDR photo.
+
+
+
+% \newline Z obr.~\ref{f:rozhod} je všetko jasné. 
+
+\begin{figure*}[tbh]
+	% \includegraphics[scale=1.0]{diagram.pdf}
+	\caption{Combining few photos with different exposures 
+	usually creates HDR image}
+	\label{f:rozhod}
+\end{figure*}
+
+
+
+\section{Is HDR photos will solve the problem?} \label{ina}
+Yes, it would make dynamic range wider. But like every technology 
+it has some problems.
+
+Main problem is \ldots{} Firstly lets see some explanation (expl.~\ref{ina:nejake}), 
+and then one more (expl.~\ref{ina:este}) to fully understand...
+\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+% Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+\subsection{Explanation} \label{ina:nejake}
+
+Niekedy treba uviesť zoznam:
+\begin{itemize}
+	\item Dynamic range is the range between the maximum and minimum
+	measurable light intensities.
+	    %   \begin{itemize}
+		      
+	    %   \end{itemize}
+\end{itemize}
+
+
+% \begin{enumerate}
+% 	\item jedna vec
+% 	\item druhá vec
+% 	      \begin{enumerate}
+% 		      \item x
+% 		      \item y
+% 	      \end{enumerate}
+% \end{enumerate}
+
+
+\subsection{Explanation} \label{ina:este}
+
+\paragraph{How are made under/over-exposed images}
+      \begin{itemize}
+		\item Over- and under-exposed images are made by decreasing 
+		or respectively increasing shutter-speed in camera.
+	      \end{itemize}
+
+
+
+\section{Dôležitá časť} \label{dolezita}
+
+
+
+
+\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+
+
+
+
+\section{Záver} \label{zaver} % prípadne iný variant názvu
+
+
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliography{literatura} \paragraph{https://dl.acm.org/doi/10.5555/2383847.2383888}
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\end{document}
