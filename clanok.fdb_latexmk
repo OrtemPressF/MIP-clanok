@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex clanok"] 1636214376 "clanok.aux" "clanok.bbl" "clanok" 1636214382
+["bibtex clanok"] 1636238472 "clanok.aux" "clanok.bbl" "clanok" 1636238474
   "D:/Install/LaTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "clanok.aux" 1636214378 2750 93c847fb8517d805246dd2c8214a8c00 "pdflatex"
-  "literatura.bib" 1633605295 1658 0f6242cb77bbf693479339878f4d04f2 ""
+  "clanok.aux" 1636238473 2474 a7ee8c923a41e979bed98d18d673debf "pdflatex"
+  "literatura.bib" 1636238454 1227 fe05964ea640b08b9ba5691c9530af41 ""
   (generated)
-  "clanok.blg"
   "clanok.bbl"
-["pdflatex"] 1636214377 "d:/Install/FIIT/MIP/Prezentacia/clanok.tex" "clanok.pdf" "clanok" 1636214382
+  "clanok.blg"
+["pdflatex"] 1636238472 "d:/Install/FIIT/MIP/Prezentacia/clanok.tex" "clanok.pdf" "clanok" 1636238474
   "C:/Users/Professional/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk" 1632756791 7284 cac0bb91eb1168b26468eb2583569b6d ""
   "C:/Users/Professional/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1632756781 11548 c3345ccec7d3a6a1380ed19bf5daa78c ""
   "C:/Users/Professional/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1632756812 14064 e993f7e0898495fa498a7de59070c898 ""
@@ -20,6 +20,7 @@
   "C:/Users/Professional/AppData/Local/MiKTeX/fonts/pk/ljfour/public/csfonts/dpi600/csr8.pk" 1632756789 13340 a54119b754746f3e145a91da3f8296ad ""
   "C:/Users/Professional/AppData/Local/MiKTeX/fonts/pk/ljfour/public/csfonts/dpi600/csr9.pk" 1632756808 14856 dc5d12d8bc7ff201185041eb0c6763a7 ""
   "C:/Users/Professional/AppData/Local/MiKTeX/fonts/pk/ljfour/public/csfonts/dpi600/cssl10.pk" 1632756785 20212 413aba8710844bbb7a6b35187c4ee9af ""
+  "C:/Users/Professional/AppData/Local/MiKTeX/fonts/pk/ljfour/public/csfonts/dpi600/cstt10.pk" 1632756796 13276 085117204bb415ef4b3d38ef949d98db ""
   "C:/Users/Professional/AppData/Local/MiKTeX/fonts/pk/ljfour/public/csfonts/dpi600/cstt9.pk" 1632756806 11584 7f19e5dd3f8eaebdb914c2d3c867739f ""
   "C:/Users/Professional/AppData/Local/MiKTeX/fonts/pk/ljfour/public/csfonts/dpi720/csbx12.pk" 1632756802 27708 19a02e4f6bc390c3e5fd6167d4a3b599 ""
   "C:/Users/Professional/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1632756573 9702217 67a4dd2cb41c90c68a24316a20eac51f ""
@@ -47,6 +48,7 @@
   "D:/Install/LaTeX/fonts/tfm/public/csfonts/csr8.tfm" 867743228 2368 f4f9f06a2b86f71b5f351721c3e60919 ""
   "D:/Install/LaTeX/fonts/tfm/public/csfonts/csr9.tfm" 867743230 2376 de3119feecfe0dae00b14f6e9033497b ""
   "D:/Install/LaTeX/fonts/tfm/public/csfonts/cssl10.tfm" 867743234 2604 017cb3ae2597ec48c1aa5eb8f746f130 ""
+  "D:/Install/LaTeX/fonts/tfm/public/csfonts/cstt10.tfm" 867743322 1280 7d36f30f3ae8103ea4cbddb23dd71aea ""
   "D:/Install/LaTeX/fonts/tfm/public/csfonts/cstt9.tfm" 867743332 1276 c0504c18a6a7a61858690795c8c0b15a ""
   "D:/Install/LaTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "D:/Install/LaTeX/tex/cslatex/base/il2cmr.fd" 1030517054 2233 ed1615a25411b6b9d990c84a33d9881b ""
@@ -101,13 +103,13 @@
   "D:/Install/LaTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "D:/Install/LaTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "D:/Install/LaTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "clanok.aux" 1636214378 2750 93c847fb8517d805246dd2c8214a8c00 "pdflatex"
-  "clanok.bbl" 1636214377 52 0eba253fc001332e731e8aba3f23127b "bibtex clanok"
-  "clanok.out" 1636214378 1139 8dd658b45937466da4477456352d964b "pdflatex"
-  "clanok.tex" 1636214371 6249 5cfd16e57b0c60b19382747ada833767 ""
-  "d:/Install/FIIT/MIP/Prezentacia/clanok.tex" 1636214371 6249 5cfd16e57b0c60b19382747ada833767 ""
+  "clanok.aux" 1636238473 2474 a7ee8c923a41e979bed98d18d673debf "pdflatex"
+  "clanok.bbl" 1636238472 1127 87050cd2575c42d8ffaf12c46ad3df1e "bibtex clanok"
+  "clanok.out" 1636238473 1056 ca4d064d67832c8925eae5d01d21e935 "pdflatex"
+  "clanok.tex" 1636238467 8205 c0d130f4f94a77af09fd6c74fea895e2 ""
+  "d:/Install/FIIT/MIP/Prezentacia/clanok.tex" 1636238467 8205 c0d130f4f94a77af09fd6c74fea895e2 ""
   (generated)
   "clanok.pdf"
   "clanok.aux"
-  "clanok.log"
   "clanok.out"
+  "clanok.log"

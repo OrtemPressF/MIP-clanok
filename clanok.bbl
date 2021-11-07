@@ -1,3 +1,33 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{HDR1}
+Li-Yi Wei Kun Zhou Baining Guo Heung-Yeung~Shum Lvdi~Wang.
+\newblock High dynamic range image hallucination.
+\newblock \url{https://dl.acm.org/doi/10.5555/2383847.2383888}.
+
+\bibitem{LuckySharp}
+USA Microsoft Research~Limited.
+\newblock Seeing mt. rainier: Lucky imaging for multi-image denoising,
+  sharpening, and haze removal.
+\newblock
+  \url{https://ieeexplore.ieee.org/abstract/document/5585096/authors#authors}.
+
+\bibitem{Burst}
+Google research.
+\newblock Burst photography for high dynamic range and low-light imaging on
+  mobile cameras.
+\newblock \url{https://dl.acm.org/doi/10.1145/2980179.2980254}.
+
+\bibitem{HDR2}
+Ltd Samsung Electronics~Co.
+\newblock Wide dynamic range technologies: For mobile imaging sensor systems.
+\newblock \url{https://ieeexplore.ieee.org/document/6776505}.
+
+\bibitem{Google}
+Stanford University.
+\newblock Burst photography for high dynamic range and low-light imaging on
+  mobile cameras.
+\newblock
+  \url{http://graphics.stanford.edu/papers/hdrp/hasinoff-hdrplus-sigasia16-preprint.pdf}.
 
 \end{thebibliography}

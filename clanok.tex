@@ -36,7 +36,7 @@
 
 \section{Introduction}
 
-Today slightly every smartphone has a camera. It is very convenient, 
+Today slightly every smartphone has a camera. It is very convenient,
 % may be percentage of all photos made on phones vs cameras
 until we speak of quality of photos, captured with phone.
 By this article I will suggest way to improve quality by some algorithms and
@@ -54,7 +54,7 @@ taken with mobile devices nowadays.
 
 How can we solve problem with bad quality of photos? There are two ways:
 by improving hardware or improving software. But why just don't install
-large sensors (with big pixels in it) from the cameras to the smartphones, 
+large sensors (with big pixels in it) from the cameras to the smartphones,
 making a huge hardware improvement?
 \newline It all because of dimensions of the smartphones. Today it's no
 way that big sensors can be handled in smartphone, which width is mostly
@@ -80,8 +80,8 @@ colors, or in other words, lack  of dynamic range. Especially in
 high-contrast photos.
 To understand what dynamic range is, we can imagine it as a piano keyboard. There is
 a range of tones, in which we can see like piano has keyboard with limited
- width, through which we can play. And the wider
-it is, the better. Even human eye can not see all range at once, but sensors 
+width, through which we can play. And the wider
+it is, the better. Even human eye can not see all range at once, but sensors
 with big pixels in
 digital cameras can because of manual exposure, so we can put exposure
 exactly where we want it to be. Only the biggest and most expensive
@@ -89,41 +89,50 @@ sensors can accommodate all 12 stops (there is a 12-stop difference in the
 highlights and shadows). But we are talking about matrices with small
 pixels, by which we want to cover all range of tones.
 \newline The simplest decision is to combine few under- and over-exposed
-photo into one frame. Doing that we create HDR photo.
+photo into one frame. Doing that we create HDR photo. \cite{HDR1}
 
 
 
 % \newline Z obr.~\ref{f:rozhod} je všetko jasné. 
 
-\begin{figure*}[tbh]
-	% \includegraphics[scale=1.0]{diagram.pdf}
-	\caption{Combining few photos with different exposures 
-	usually creates HDR image}
-	\label{f:rozhod}
-\end{figure*}
+% \begin{figure*}[tbh]
+% 	\caption{Combining few photos with different exposures 
+% 	usually creates HDR image}
+% 	\label{f:rozhod}
+% \end{figure*}
 
 
 
-\section{Is HDR photos will solve the problem?} \label{ina}
-Yes, it would make dynamic range wider. But like every technology 
+\section{HDR photos} \label{ina}
+Yes, HDR photographs can solve the problem and
+make dynamic range wider. But like every technology
 it has some problems.
 
-Main problem is \ldots{} Firstly lets see some explanation (expl.~\ref{ina:nejake}), 
-and then one more (expl.~\ref{ina:este}) to fully understand...
-\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+Main problem is difference between over- and under-exposed images...
+% describe fuul problem?
+Firstly lets see some explanation (expl.~\ref{ina:nejake}),
+and then one more (expl.~\ref{ina:este}) to fully understand
+why is it happening.
+\newline With that knowledge in head we can conclude that  main problem is
+difference in images, captured in a)a different time, b)with different
+important settings, such as shutter-speed.
+\footnote{The speed at which
+	the shutter of the camera closes.}
 
 % Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
 
 
 \subsection{Explanation} \label{ina:nejake}
 
-Niekedy treba uviesť zoznam:
+Some fact to remember:
 \begin{itemize}
 	\item Dynamic range is the range between the maximum and minimum
-	measurable light intensities.
-	    %   \begin{itemize}
-		      
-	    %   \end{itemize}
+	      measurable light intensities.
+	\item Combining few photos with different exposures
+	      usually creates HDR image
+	      %   \begin{itemize}
+
+	      %   \end{itemize}
 \end{itemize}
 
 
@@ -140,31 +149,57 @@ Niekedy treba uviesť zoznam:
 \subsection{Explanation} \label{ina:este}
 
 \paragraph{How are made under/over-exposed images}
-      \begin{itemize}
-		\item Over- and under-exposed images are made by decreasing 
-		or respectively increasing shutter-speed in camera.
-	      \end{itemize}
+\begin{itemize}
+	\item Over- and under-exposed images are made by decreasing
+	      or respectively increasing shutter-speed in camera.
+\end{itemize}
 
 
 
-\section{Dôležitá časť} \label{dolezita}
+\section{Under-exposing images} \label{dolezita}
+
+Problems start with moving objects in frame. Different shutter-speed causes
+the difference in frames that in turn combines into final picture. 
+Also, over-exposed images has more distortion because shutter-speed 
+is relatively slow.
+To remove the difference Google \cite{Google}
+scientists
+firstly changed few photos with different exposure to few underexposed ones.
+That helped to achieve more similar primary photos, remove photos that 
+captured on slow shutter-speed and in this way to better merge them into one.
+% more detailed later
+\newline ...But there is one more problem: several frames even on the same exposure
+still need some time to make. In motion, it becomes mostly impossible.
 
 
 
+\section{Burst photographs and buffer} \label{dolezitejsia}
+Another possible decision from Google Research is buffer. So, at once
+you open the camera app, it starts to make burst photograph. \cite{Burst}
+It keeps doing it all the time, before someone make a photo. 
+By this way, some last photos from buffer are compare with the photo made on 
+the moment the shutter was pressed. Then from all photographs picking the 
+sharpest image. This approach is commonly known as 
+lucky imaging  \cite{LuckySharp}. 
+\newline Also, in modern smartphones there are usually more than one camera, 
+and my suggestion is to improve the number of burst photographs by 
+at the time of creating a shot, take images from three modules at once.
 
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+\section{Conclusions} \label{zaver} % prípadne iný variant názvu
+I described a system for improving quality of photo by 
+taking few underexposed frames from buffer and then to combine them all to 
+one image. It possibly can increase dynamic range of photo and also 
+to produce better resolution. Also, I counted disadvantages of modern HDR 
+technology and offered a replacement. 	
 
-
-
-
-\section{Záver} \label{zaver} % prípadne iný variant názvu
-
-
-
+\cite{HDR2}
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
-
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-\bibliography{literatura} \paragraph{https://dl.acm.org/doi/10.5555/2383847.2383888}
+
+
+
+
+\bibliography{literatura}
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
